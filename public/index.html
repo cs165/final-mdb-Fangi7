@@ -4,11 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>CS193x Final Project</title>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <script src="/js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css"/> 
+    <script src="./js/diary.js" defer></script>
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/app.js" defer></script>
     </script>
   </head>
   <body>
     <!-- TODO(you): Add the HTML necessary to complete your final project. -->
+    <div id='main-page'>
+    <header>
+      <h1>Create a Daily Journal<h1>
+      <h4>Note: Your journal will be viewable and editable to anyone who has the link!<h4>
+    </header>
+    <div id ='createbtn'>CREATE A NEW JOURNAL</div>
+  </div>
+  <div id='diary-page'  class='inactive'>
+    <main id='container'>
+    <div id ='date'></div>
+    <div id ='sentense'>LIST YOUR ...</div>
+    <textarea id='editblock' class='inactive' ></textarea>
+    <div id='results'></div>
+    </div>
+    </main>
+    <footer>
+        <div id='footerbtn'>
+        <img id='backbtn' src='./image/back.png' alt=""/>
+        <div id='homebtn'>HOME</div>
+        <img id='forwardbtn' src='./image/forward.png' alt=""/>
+        </div>
+   <!-- editbtn-->
+        <div id='checkbtn' class='inactive'>
+        <img  src='./image/checked.png' alt=''/>
+        </div>
+   </footer>
+  </div>
+
   </body>
 </html>
