@@ -1,0 +1,2 @@
+var menuscreen = new Menu();
+
