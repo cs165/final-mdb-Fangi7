@@ -32,7 +32,7 @@ class Diary {
     
     this.containerElement.addEventListener('click',this.editon);
     this.backbtnElement.addEventListener('click',this.newDiary);
-    //this.homebtnElement.addEventListener('click',this.newDiary);
+    this.homebtnElement.addEventListener('click',this.newDiary);
     this.forwardbtnElement.addEventListener('click',this.newDiary);  
   
   }
@@ -48,6 +48,9 @@ class Diary {
       }
       if(event.target.id == 'forwardbtn'){
           this.daycont = this.daycont + 1;
+      }
+      if(event.target.id == 'homebtn'){
+          this.daycont = 0;
       }
       //set new date
       console.log(event.target.id);
